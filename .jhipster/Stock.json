@@ -1,0 +1,40 @@
+{
+  "applications": "*",
+  "changelogDate": "20230505091145",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "stock",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "category",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "purchasePrice",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "salePrice",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "units",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "company",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Stock",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

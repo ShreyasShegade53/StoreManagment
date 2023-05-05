@@ -1,0 +1,48 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="soldProduct">
+      <h2 data-cy="soldProductDetailsHeading"><span>Sold Product</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span>ID</span></dt>
+        <dd>
+          <span>{{ soldProduct.id }}</span>
+        </dd>
+        <dt><span>Name</span></dt>
+        <dd>
+          <span>{{ soldProduct.name }}</span>
+        </dd>
+        <dt><span>Category</span></dt>
+        <dd>
+          <span>{{ soldProduct.category }}</span>
+        </dd>
+        <dt><span>Price</span></dt>
+        <dd>
+          <span>{{ soldProduct.price }}</span>
+        </dd>
+        <dt><span>Units</span></dt>
+        <dd>
+          <span>{{ soldProduct.units }}</span>
+        </dd>
+        <dt><span>Company</span></dt>
+        <dd>
+          <span>{{ soldProduct.company }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/sold-product', soldProduct.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+      </button>
+    </div>
+  </div>
+</div>
