@@ -1,0 +1,43 @@
+entity Employee{	
+name String,
+address String,
+phoneNo Long,
+job String,
+username String 
+}
+
+entity Product{
+name String,
+category String,
+company String,
+}
+
+entity PurchaseProduct{
+name String,
+category String,
+price Double,
+units Integer,
+from String,
+company String
+}
+
+entity SoldProduct{
+name String,
+category String,
+price Double,
+units Integer,
+company String
+}
+
+entity Stock{
+name String,
+category String,
+purchasePrice Double,
+salePrice Double,
+units Integer,
+company String
+}
+
+entity StoreName{
+name String
+}
